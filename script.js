@@ -103,7 +103,7 @@ function gameLoop() {
     drawGame();
 
     // Adjust speed based on score (optional, makes it harder)
-    const speed = 150 - Math.min(score * 5, 100); // Max speed cap
+    const speed = 120 - Math.min(score * 5, 80); // Max speed cap. Reduced initial delay from 150 to 120, and max reduction from 100 to 80.
     gameLoopTimeout = setTimeout(gameLoop, speed);
 }
 
