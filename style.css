@@ -56,4 +56,12 @@ button:hover {
 
 #gameOverMessage h2 {
     margin-top: 0;
+}
+
+#startButton {
+    position: fixed;
+    bottom: 30px; /* Adjust spacing from bottom */
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 100; /* Ensure it's above other content if necessary */
 } 
